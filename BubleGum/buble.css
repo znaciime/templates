@@ -1,0 +1,483 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (min-width:300px ){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0% 0% 0 0%;
+        background-color: #181818;
+    }
+    .top{
+        overflow: hidden;
+        width: 100%;
+        height: 50px;
+        font-style: oblique;
+        color: white;
+        background-color: black;
+        left: 4px;
+        top: 4px;
+        position: absolute;
+        box-sizing: border-box;
+        
+        
+    }
+    .top h3{
+        text-shadow:0px 0px 2px #FA19CA;
+    }
+    .top h5{
+        text-shadow:0px 0px 2px #FA19CA;
+    }
+    .header{
+        
+        width: 100%;
+        height: 150px;
+    }
+    .bombimg{
+        height:100px;
+        width: 100px;
+    }
+}
+@media screen and (min-width:500px ){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0% 0% 0 0%;
+        background-color: #181818;
+    }
+    .top{
+        overflow: hidden;
+        width: 100%;
+        height: 80px;
+        font-style: oblique;
+        color: white;
+        background-color: black;
+        left: 4px;
+        top: 4px;
+        position: absolute;
+        box-sizing: border-box;
+        
+    }
+    .top h3{
+        text-shadow: 0px 0px 2px #FA19CA;
+    }
+    .top h5{
+        text-shadow:0px 0px 2px #FA19CA;
+    }
+    .header{
+        
+        width: 100%;
+        height: 150px;
+    }
+    .bombimg{
+        height:100px;
+        width: 100px;
+    }
+}
+@media screen and (min-width:900px ){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0% 0% 0 0%;
+        background-color: #181818;
+    }
+    .top{
+        overflow: hidden;
+        width: 98%;
+        height: 150px;
+        font-style: oblique;
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        
+        
+    }
+    .bombimg{
+        height:100px;
+        width: 100px;
+    }
+    .top h3{
+        
+        display: inline;
+        font-size: 1.5em;
+        text-shadow: 5px 5px 8px #FA19CA;
+    }
+    .top h5{
+        
+        display: inline;
+        font-size: 1.5em;
+        text-shadow:5px 5px 8px #FA19CA;
+    }
+    .header{
+        
+        width: 100%;
+        height: 154px;
+        position: relative;
+        
+    }
+    .header span{
+        display: block;
+        position: relative;
+    }
+    .header span:nth-child(1){
+        animation: animate1 1s linear infinite;
+        background: linear-gradient(90deg, transparent, #FA19CA);
+        height: 4px;
+        left:-100px;
+        top:0;
+        width:100% 
+        
+    }
+    @keyframes animate1{
+        0%{
+            left:-100%
+        }
+        50%,
+        100%{
+            left:100%;
+        }
+    }
+    .header span:nth-child(2){
+        animation: animate2 1s linear infinite;
+        animation-delay:0.25s;
+        background: linear-gradient(180deg, transparent, #FA19CA);
+        height:100%;
+        top:-100%;
+        left:99%;
+        width:4px 
+    }
+    @keyframes animate2{
+        0%{
+            top:-100%
+        }
+        50%,
+        100%{
+            top:100%;
+        }
+    } 
+    .header span:nth-child(3){
+        animation: animate3 1s linear infinite;
+        animation-delay:0.5s;
+        background: linear-gradient(180deg, transparent, #FA19CA);
+        height:4px;
+        bottom:0;
+       right: 0px;
+        width:100%; 
+    }
+    @keyframes animate3{
+        0%{
+            right:0%
+        }
+        50%,
+        100%{
+            right:100%;
+        }
+    }
+    .header span:nth-child(4){
+        animation: animate4 1s linear infinite;
+        animation-delay:0.75s;
+        background: linear-gradient(180deg, transparent, #FA19CA);
+        height:100%;
+        bottom:-100%;
+       left: 0;
+        width:4px; 
+    }
+    @keyframes animate4{
+        0%{
+            bottom:-100%
+        }
+        50%,
+        100%{
+            bottom:100%;
+        }
+    }
+}
+@media screen and (min-width:1200px ){
+     body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0% 10% 0 10%;
+        background-color: #181818;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        width: 98% ;
+        height: 142px;
+        font-style: oblique;
+        color: white;
+        position: absolute;
+        top: 4px;
+        left: 8px;
+        
+        box-sizing: border-box;
+    }
+    .bombimg{
+        height:100px;
+        width: 100px;
+    }
+    .top h3{
+        display: inline;
+        font-size: 1.5em;
+        text-shadow:-5px 0px 12px #FA19CA;
+    }
+    .top h5{
+        display: inline;
+        font-size: 1.5em;
+        text-shadow:-5px 0px 12px #FA19CA;
+    }
+    .header{
+        overflow: hidden;
+        width: 100%;
+        height: 148px;
+        position: relative;
+        margin-bottom: 20px;
+        
+    }
+    .header span{
+        display: block;
+        position: relative;
+    }
+    .header span:nth-child(1){
+        animation: animate1 1s linear infinite;
+        background: linear-gradient(90deg, transparent, #FA19CA);
+        height: 4px;
+        left:-100px;
+        top:0;
+        width:100% 
+    }
+    @keyframes animate1{
+        0%{
+            left:-100%
+        }
+        50%,
+        100%{
+            left:100%;
+        }
+    }
+    .header span:nth-child(2){
+        animation: animate2 1s linear infinite;
+        animation-delay:0.25s;
+        background: linear-gradient(180deg, transparent, #FA19CA);
+        height:100%;
+        top:-100%;
+        left: 99%;
+        width:4px; 
+    }
+    @keyframes animate2{
+        0%{
+            top:-100%
+        }
+        50%,
+        100%{
+            top:100%;
+        }
+    }
+    .header span:nth-child(3){
+        animation: animate3 1s linear infinite;
+        animation-delay:0.5s;
+        background: linear-gradient(180deg, transparent, #FA19CA);
+        height:4px;
+        top: 142px;
+       right: -100px;
+        width:100%; 
+    }
+    @keyframes animate3{
+        0%{
+            right:-100%
+        }
+        50%,
+        100%{
+            right:100%;
+        }
+    }
+    .header span:nth-child(4){
+        animation: animate4 1s linear infinite;
+        animation-delay:0.75s;
+        background: linear-gradient(90deg, transparent, #FA19CA);
+        height:100%;
+        bottom:-100%;
+       left: 0;
+        width:4px; 
+        
+    }
+    @keyframes animate4{
+        0%{
+            bottom:-100%
+        }
+        50%,
+        100%{
+            bottom:100%;
+        }
+    }
+    .leftneon{
+        height: 300px;
+        padding: 15%;
+        background-color: black ;
+        list-style-type: none;
+        color: white;
+        text-shadow: -4px -2px 6px #FA19CA
+    }
+    .leftneon li{
+        
+        text-align: center;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .leftneon a{
+        text-decoration: none;
+        color: white;
+    }
+    .leftneon li:hover{
+        width: 100%;
+        cursor: pointer;
+        background-color:#FA19CA ;
+        box-shadow: 0 0 5px #FA19CA , 0 0 25px #FA19CA  0 0 50px #FA19CA ,0 0 200px #FA19CA ;
+        -webkit-box-reflect: below 1px lineear-gradient(transparent, #0005);
+    }
+    .middle{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .leftmenu{
+        
+        width: 100%;
+        height:300px;
+        position: relative;
+    }
+    .leftmenu span{
+        display: block;
+        position: relative;
+    }
+    .item{
+        background-color: black;
+        padding: 15px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        color:white;
+        margin-bottom: 20px;
+        border: 2px solid #FA19CA;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item:hover{
+        box-shadow: 0 0 5px #FA19CA, 0 0 25px #FA19CA, 0 0 50px #FA19CA,0 0 200px #FA19CA;
+        background-color: #FA19CA;
+    }
+    .span1{
+        animation: animate1 1s linear infinite;
+        background: linear-gradient(90deg, transparent, #F9D4F1);
+        height: 4px;
+        left:-100px;
+        top:0;
+        width:100% 
+    }
+    @keyframes animate1{
+        0%{
+            left:-100%
+        }
+        50%,
+        100%{
+            left:100%;
+        }
+    }
+    .span2{
+        animation: animate2 1s linear infinite;
+        animation-delay:0.25s;
+        background: linear-gradient(180deg, transparent, #F9D4F1);
+        height:100%;
+        top:0%;
+        left: 100%;
+        width:4px; 
+    }
+    @keyframes animate2{
+        0%{
+            top:0%
+        }
+        50%,
+        100%{
+            top:100%;
+        }
+    }
+    .span3{
+        animation: animate3 1s linear infinite;
+        animation-delay:0.5s;
+        background: linear-gradient(180deg, transparent, #F9D4F1);
+        height:4px;
+        top: 0%;
+       right: -100px;
+        width:100%; 
+    }
+    @keyframes animate3{
+        0%{
+            right:-100%
+        }
+        50%,
+        100%{
+            right:100%;
+        }
+    }
+    .span4{
+        animation: animate4 1s linear infinite;
+        animation-delay:0.75s;
+        background: linear-gradient(90deg, transparent, #F9D4F1);
+        height:100%;
+        bottom:-100%;
+       left: 0;
+        width:4px; 
+        
+    }
+    @keyframes animate4{
+        0%{
+            bottom:-100%
+        }
+        50%,
+        100%{
+            bottom:100%;
+        }
+    }
+}
+@media screen and (min-width:1600px ){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0% 10% 0 10%;
+        background-color: #181818;
+    }
+    .top{
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
+        font-style: oblique;
+        color: white;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        box-sizing: border-box;
+    }
+    .bombimg{
+        height:100px;
+        width: 100px;
+    }
+    .top h3{
+        display: inline;
+        font-size: 1.5em;
+        text-shadow: -5px 0px 12px #FA19CA;
+    }
+    .top h5{
+        display: inline;
+        font-size: 1.5em;
+        text-shadow:-5px 0px 12px #FA19CA;
+    }
+    .header{
+       
+        width: 100%;
+        height: 142px;
+    }
+}
