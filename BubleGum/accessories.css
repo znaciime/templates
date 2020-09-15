@@ -1,0 +1,284 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (min-width:1200px ){
+    body{
+       background-image: url("media/zero.jpg");
+       background-position: center ;
+       overflow-x: hidden;
+       overflow-y: scroll;
+       margin: 0% 10% 0 10%;
+       background-color: #181818;
+   }
+
+   .top{
+       display: flex;
+       justify-content: space-around;
+       overflow: hidden;
+       width: 98% ;
+       height: 152px;
+       font-style: oblique;
+       color: white;
+       position: absolute;
+       top: 14px;
+       left: 8px;
+       
+       box-sizing: border-box;
+   }
+   .bombimg{
+       height:100px;
+       width: 100px;
+   }
+   .top h3{
+       display: inline;
+       font-size: 1.5em;
+       text-shadow:-5px 0px 12px #00CD4E;
+   }
+   .top h5{
+       display: inline;
+       font-size: 1.5em;
+       text-shadow:-5px 0px 12px #00CD4E;
+   }
+   .header{
+       background-color: black;
+       top: 10px;
+       overflow: hidden;
+       width: 100%;
+       height: 178px;
+       position: relative;
+       margin-bottom: 20px;
+       
+   }
+   .header span{
+       display: block;
+       position: relative;
+   }
+   .header span:nth-child(1){
+       animation: animate1 1s linear infinite;
+       background: linear-gradient(90deg, transparent, #00CD4E);
+       height: 4px;
+       left:-100px;
+       top:0px;
+       width:100% 
+   }
+   @keyframes animate1{
+       0%{
+           left:-100%
+       }
+       50%,
+       100%{
+           left:100%;
+       }
+   }
+   .header span:nth-child(2){
+       animation: animate2 1s linear infinite;
+       animation-delay:0.25s;
+       background: linear-gradient(180deg, transparent, #00CD4E);
+       height:100%;
+       top:-100%;
+       left: 99%;
+       width:4px; 
+   }
+   @keyframes animate2{
+       0%{
+           top:-100%
+       }
+       50%,
+       100%{
+           top:100%;
+       }
+   }
+   .header span:nth-child(3){
+       animation: animate3 1s linear infinite;
+       animation-delay:0.5s;
+       background: linear-gradient(180deg, transparent, #00CD4E);
+       height:4px;
+       top: 0px;
+      right: -100px;
+       width:100%; 
+   }
+   @keyframes animate3{
+       0%{
+           right:-100%
+       }
+       50%,
+       100%{
+           right:100%;
+       }
+   }
+   .header span:nth-child(4){
+       animation: animate4 1s linear infinite;
+       animation-delay:0.75s;
+       background: linear-gradient(360deg, transparent, #00CD4E);
+       height:100%;
+       bottom:-100%;
+      left: 0;
+       width:4px; 
+       
+   }
+   @keyframes animate4{
+       0%{
+           bottom:-100%
+       }
+       50%,
+       100%{
+           bottom:100%;
+       }
+   }
+   .leftneon{
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    height: 290px;
+    padding: 10px;
+    background-color: black ;
+    list-style-type: none;
+    color: white;
+    text-shadow: -4px -2px 6px  #00CD4E
+}
+.leftneon li{
+    
+    text-align: center;
+    height: 35px;
+    margin-bottom: 20px;
+}
+.leftneon a{
+    text-decoration: none;
+    color: white;
+}
+.leftneon li:hover{
+    width: 100%;
+    cursor: pointer;
+    background-color:#00CD4E ;
+    box-shadow: 0 0 5px #00CD4E , 0 0 25px #00CD4E  0 0 50px #00CD4E ,0 0 200px #00CD4E ;
+    -webkit-box-reflect: below 1px lineear-gradient(transparent, #0005);
+}
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.leftMenu{
+    overflow: hidden;
+    width: 166px;
+    height:300px;
+    position: relative;
+    display: block;
+}
+.leftMenu span{
+    display: block;
+    position: relative;
+}
+
+.item{
+    background-color: black;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    color:white;
+    margin-bottom: 20px;
+    border: 2px solid #00CD4E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item:hover{
+    box-shadow: 0 0 5px #00CD4E, 0 0 25px #00CD4E, 0 0 50px #00CD4E,0 0 200px #00CD4E;
+    background-color: #00CD4E;
+}
+.gunimage{
+    max-height: 250px;
+    max-width: 300px;
+}
+.commercial{
+    color: #CCF3EB;
+    text-align: center;
+    text-shadow: -3px 3px 3px black;
+    min-height: 200px;
+    max-height: 350px;
+    width: 250px;
+    display: block;
+    background-image: url('media/zero1.jpg');
+    background-size: contain;
+    
+    position: sticky;
+    top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow:0 0 5px #00CD4E, 0 0 25px #00CD4E, 0 0 50px #00CD4E,0 0 200px #00CD4E ;
+}
+.commercial:hover{
+    box-shadow: 0 0 5px #CCF3EB, 0 0 25px #CCF3EB, 0 0 50px #CCF3EB,0 0 200px #CCF3EB;
+}
+.spanone{
+    animation: animate1 1s linear infinite;
+    background: linear-gradient(90deg, transparent, #00CD4E);
+    height: 4px;
+    left:-100px;
+    top:10px;
+    width:100% 
+}
+@keyframes animate1{
+    0%{
+        left:-100%
+    }
+    50%,
+    100%{
+        left:100%;
+    }
+}
+.spantwo{
+    animation: animate2 1s linear infinite;
+    animation-delay:0.25s;
+    background: linear-gradient(180deg, transparent,  #00CD4E);
+    height:100%;
+    top:0%;
+    left: 96%;
+    width:4px; 
+}
+@keyframes animate2{
+    0%{
+        top:0%
+    }
+    50%,
+    100%{
+        top:100%;
+    }
+}
+.spanthree{
+    animation: animate3 1s linear infinite;
+    animation-delay:0.5s;
+    background: linear-gradient(180deg, transparent,  #00CD4E);
+    height:4px;
+    top: 296px;
+   right: -100px;
+    width:100%; 
+}
+@keyframes animate3{
+    0%{
+        right:-100%
+    }
+    50%,
+    100%{
+        right:100%;
+    }
+}
+.spanfour{
+    animation: animate4 1s linear infinite;
+    animation-delay:0.75s;
+    background: linear-gradient(90deg, transparent,  #00CD4E);
+    height:100%;
+    bottom:-100%;
+   left: 0;
+    width:4px; 
+    
+}
+@keyframes animate4{
+    0%{
+        bottom:-100%
+    }
+    50%,
+    100%{
+        bottom:100%;
+    }
+}
+}

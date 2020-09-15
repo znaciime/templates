@@ -90,7 +90,7 @@
         padding: 10px;
         box-sizing: border-box;
         position: absolute;
-        top: 4px;
+        top: 14px;
         left: 4px;
         
         
@@ -197,6 +197,9 @@
 }
 @media screen and (min-width:1200px ){
      body{
+         
+        background-image: url("media/zero.jpg");
+        background-position: center ;
         overflow-x: hidden;
         overflow-y: scroll;
         margin: 0% 10% 0 10%;
@@ -208,12 +211,13 @@
         justify-content: space-around;
         overflow: hidden;
         width: 98% ;
-        height: 142px;
+        height: 158px;
         font-style: oblique;
         color: white;
         position: absolute;
-        top: 4px;
+        top: 14px;
         left: 8px;
+        z-index: 100;
         
         box-sizing: border-box;
     }
@@ -232,9 +236,11 @@
         text-shadow:-5px 0px 12px #FA19CA;
     }
     .header{
+        background-color: black;
+        top: 4px;
         overflow: hidden;
         width: 100%;
-        height: 148px;
+        height: 158px;
         position: relative;
         margin-bottom: 20px;
         
@@ -248,7 +254,7 @@
         background: linear-gradient(90deg, transparent, #FA19CA);
         height: 4px;
         left:-100px;
-        top:0;
+        top:10px;
         width:100% 
     }
     @keyframes animate1{
@@ -283,7 +289,7 @@
         animation-delay:0.5s;
         background: linear-gradient(180deg, transparent, #FA19CA);
         height:4px;
-        top: 142px;
+        top: 168px;
        right: -100px;
         width:100%; 
     }
@@ -299,7 +305,7 @@
     .header span:nth-child(4){
         animation: animate4 1s linear infinite;
         animation-delay:0.75s;
-        background: linear-gradient(90deg, transparent, #FA19CA);
+        background: linear-gradient(360deg, transparent, #FA19CA);
         height:100%;
         bottom:-100%;
        left: 0;
@@ -316,8 +322,11 @@
         }
     }
     .leftneon{
+        position: absolute;
+        top: 0px;
+        left: 4px;
         height: 300px;
-        padding: 15%;
+        padding: 10px;
         background-color: black ;
         list-style-type: none;
         color: white;
@@ -344,13 +353,14 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .leftmenu{
-        
-        width: 100%;
-        height:300px;
+    .leftMenu{
+        overflow: hidden;
+        width: 166px;
+        height:328px;
         position: relative;
+        display: block;
     }
-    .leftmenu span{
+    .leftMenu span{
         display: block;
         position: relative;
     }
@@ -370,12 +380,70 @@
         box-shadow: 0 0 5px #FA19CA, 0 0 25px #FA19CA, 0 0 50px #FA19CA,0 0 200px #FA19CA;
         background-color: #FA19CA;
     }
-    .span1{
+    .commercial{
+        color: #CCF3EB;
+        text-align: center;
+        text-shadow: -3px 3px 3px black;
+        min-height: 200px;
+        max-height: 350px;
+        width: 250px;
+        display: block;
+        background-image: url('media/zero1.jpg');
+        background-size: contain;
+        
+        position: sticky;
+        top: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        box-shadow:0 0 5px #FA19CA, 0 0 25px #FA19CA, 0 0 50px #FA19CA,0 0 200px #FA19CA ;
+    }
+    .commercial:hover{
+        box-shadow: 0 0 5px #CCF3EB, 0 0 25px #CCF3EB, 0 0 50px #CCF3EB,0 0 200px #CCF3EB;
+    }
+    .clickbot{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        background: linear-gradient( transparent,  #FA19CA) ;
+        color: white;
+        text-decoration: none;
+        border-radius: 50%;
+        position: sticky;
+        top: 500px;
+        box-shadow:0 0 5px #FA19CA, 0 0 25px #FA19CA, 0 0 50px #FA19CA,0 0 200px #FA19CA ;
+    }
+    .arrowleft{
+        height: 10px;
+        width: 25px;
+        transform: rotateZ(135deg);
+        background-color: white;
+        position: absolute;
+        right:25px;
+        top:10px;
+    }
+    .arrowright{
+        height: 10px;
+        width: 25px;
+        transform: rotateZ(45deg);
+        background-color: white;
+        position: absolute;
+        left: 25px;
+        top:10px;
+    }
+    .arrowmid{
+        height: 35px;
+        width: 10px;
+       position: absolute;
+        left: 25px;
+        top:10px;    
+        background-color: white;
+    }
+    .spanone{
         animation: animate1 1s linear infinite;
-        background: linear-gradient(90deg, transparent, #F9D4F1);
+        background: linear-gradient(90deg, transparent, #FA19CA);
         height: 4px;
         left:-100px;
-        top:0;
+        top:10px;
         width:100% 
     }
     @keyframes animate1{
@@ -387,13 +455,13 @@
             left:100%;
         }
     }
-    .span2{
+    .spantwo{
         animation: animate2 1s linear infinite;
         animation-delay:0.25s;
-        background: linear-gradient(180deg, transparent, #F9D4F1);
+        background: linear-gradient(180deg, transparent, #FA19CA);
         height:100%;
         top:0%;
-        left: 100%;
+        left: 96%;
         width:4px; 
     }
     @keyframes animate2{
@@ -405,12 +473,12 @@
             top:100%;
         }
     }
-    .span3{
+    .spanthree{
         animation: animate3 1s linear infinite;
         animation-delay:0.5s;
-        background: linear-gradient(180deg, transparent, #F9D4F1);
+        background: linear-gradient(180deg, transparent, #FA19CA);
         height:4px;
-        top: 0%;
+        top: 5px;
        right: -100px;
         width:100%; 
     }
@@ -423,10 +491,10 @@
             right:100%;
         }
     }
-    .span4{
+    .spanfour{
         animation: animate4 1s linear infinite;
         animation-delay:0.75s;
-        background: linear-gradient(90deg, transparent, #F9D4F1);
+        background: linear-gradient(90deg, transparent, #FA19CA);
         height:100%;
         bottom:-100%;
        left: 0;
